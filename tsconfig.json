@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "src/app/(auth)/register/page.js", "src/app/(auth)/register/register-form.js", "src/schemaValidations/auth.schema.js", "src/utils/hbpro.js"  ],
   "exclude": [
     "node_modules"
   ]

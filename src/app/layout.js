@@ -25,12 +25,12 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}>
-          <Header />
           <ThemeProvider
               attribute="class"
               defaultTheme="system"
               enableSystem
               disableTransitionOnChange>
+            <Header />
             {children}
           </ThemeProvider>
       </body>
