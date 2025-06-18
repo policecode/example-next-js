@@ -1,4 +1,4 @@
-export const RouteApi = () => {
+export function RouteApi() {
 	this.setHeader = function(){
 		return {
 			'Content-Type': 'application/json'
