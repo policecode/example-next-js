@@ -12,11 +12,12 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { LoginBodyType, LoginBody } from "@/schemaValidations/auth.schema";
+import { LoginBody } from "@/schemaValidations/auth.schema";
+import { RouteApi } from "@/utils/hbpro";
 
 
 export default function LoginForm() {
-  const form = useForm<LoginBodyType>({
+  const form = useForm({
     resolver: zodResolver(LoginBody),
     defaultValues: {
         email: "",
@@ -24,15 +25,16 @@ export default function LoginForm() {
     },
   });
 
-  async function onSubmit(values: LoginBodyType) {
-    const result = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/auth/login`, {
-      body: JSON.stringify(values),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      method: "POST"
-    }).then(res => res.json())
-    console.log(result);
+  async function onSubmit(values) {
+    const jsonData = await (new RouteApi()).post(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/auth/login`, values)
+    // const result = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/auth/login`, {
+    //   body: JSON.stringify(values),
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   method: "POST"
+    // }).then(res => res.json())
+    console.log(jsonData);
     
     // console.log(envConfig);
   }

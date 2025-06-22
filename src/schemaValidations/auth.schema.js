@@ -18,7 +18,6 @@ export const RegisterBody = z
     }
   })
 
-export type RegisterBodyType = z.TypeOf<typeof RegisterBody>
 
 export const RegisterRes = z.object({
   data: z.object({
@@ -33,7 +32,6 @@ export const RegisterRes = z.object({
   message: z.string()
 })
 
-export type RegisterResType = z.TypeOf<typeof RegisterRes>
 
 export const LoginBody = z
   .object({
@@ -42,14 +40,10 @@ export const LoginBody = z
   })
   .strict()
 
-export type LoginBodyType = z.TypeOf<typeof LoginBody>
 
 export const LoginRes = RegisterRes
 
-export type LoginResType = z.TypeOf<typeof LoginRes>
 export const SlideSessionBody = z.object({}).strict()
 
-export type SlideSessionBodyType = z.TypeOf<typeof SlideSessionBody>
 export const SlideSessionRes = RegisterRes
 
-export type SlideSessionResType = z.TypeOf<typeof SlideSessionRes>

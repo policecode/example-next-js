@@ -30,8 +30,7 @@
     "next-env.d.ts",
     ".next/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "src/utils/hbpro.js"  ],
+    "**/*.tsx", "src/utils/hbpro.js"  ],
   "exclude": [
     "node_modules"
   ]

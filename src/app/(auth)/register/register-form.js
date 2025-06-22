@@ -12,11 +12,11 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { RegisterBodyType, RegisterBody } from "@/schemaValidations/auth.schema";
+import { RegisterBody } from "@/schemaValidations/auth.schema";
 
 
 export default function RegisterForm() {
-  const form = useForm<RegisterBodyType>({
+  const form = useForm({
     resolver: zodResolver(RegisterBody),
     defaultValues: {
         email: "",
@@ -26,7 +26,7 @@ export default function RegisterForm() {
     },
   });
 
-  async function onSubmit(values: RegisterBodyType) {
+  async function onSubmit(values) {
     const result = await fetch(`${process.env.NEXT_PUBLIC_API_ENDPOINT}/auth/register`, {
       body: JSON.stringify(values),
       headers: {

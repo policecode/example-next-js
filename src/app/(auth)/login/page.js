@@ -6,7 +6,6 @@ export default function LoginPage() {
        <h1 className="text-xl font-semibold text-center mb-8">Đăng nhập</h1>
             <div className="flex justify-center">
               <LoginForm />
-      
             </div>
     </div>
   );

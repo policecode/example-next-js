@@ -25,7 +25,16 @@ export default function RootLayout({ children }) {
 
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${roboto.className} antialiased`}>
+<<<<<<< HEAD
           
+=======
+          <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange>
+            <Header />
+>>>>>>> 7c2bfa81e99f67c4578ec0f093dd3ed147b8f8f1
             {children}
       </body>
     </html>
