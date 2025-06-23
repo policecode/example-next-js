@@ -4,9 +4,12 @@ import Link from "next/link";
 import { useState } from 'react';
 import clsx from 'clsx'
 export default function Header({ children }) {
+ 
   const [hiddenMenu, setHiddenMenu] = useState(true);
 
-  const handleShowMenu = () => {
+  const handleShowMenu = (e) => {
+    console.log(e.target);
+    
     setHiddenMenu(!hiddenMenu)
   }
   return (
