@@ -143,3 +143,18 @@
   @apply text-xs text-center rounded-full px-1.5;
 }
 
+.fvn-subheadline {
+  @apply flex justify-center items-center mb-24;
+}
+
+.fvn-subheadline-deco-line {
+  @apply w-8 h-px bg-gray-100;
+}
+
+.fvn-subheadline-label {
+  @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[13px];
+}
+
+.fvn-button {
+  @apply uppercase tracking-wider py-4 px-7 text-sm font-medium cursor-pointer hover:bg-white/90;
+}
