@@ -15,9 +15,9 @@ export default function Header({ children }) {
   return (
     <header className="py-6 mx-10">
       <nav className="flex flex-row justify-between items-center">
-        <div className="basis-2/6 text-center text-xl font-semibold cursor-pointer">
-          CoffeeStyle
-        </div>
+        <Link href="/" className="basis-2/6 text-center text-xl font-semibold cursor-pointer">
+          MediaSocial
+        </Link>
         <ul className={`lg:basis-3/6 lg:flex lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium ${clsx({'hidden':hiddenMenu})} fvn-mobile-top-menu-item`}>
           <li className="fvn-top-menu-item">
             <Link href="#" className="">
