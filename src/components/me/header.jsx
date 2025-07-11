@@ -25,7 +25,7 @@ export default function Header({ children }) {
           )} fvn-mobile-top-menu-item`}
         >
           <li className="fvn-top-menu-item">
-            <Link href="#" className="">
+            <Link href="/" className="">
               Youtube Downloader
             </Link>
           </li>
