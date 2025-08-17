@@ -29,7 +29,7 @@ export default function Header({ children }) {
               Youtube Downloader
             </Link>
           </li>
-          <li className="fvn-top-menu-item">
+          {/* <li className="fvn-top-menu-item">
             <Link href="#" className="">
               Product
             </Link>
@@ -38,12 +38,12 @@ export default function Header({ children }) {
             <Link href="#" className="">
               Blog
             </Link>
-          </li>
+          </li> */}
         </ul>
 
         <ul className="basis-3/6 lg:basis-1/6 flex justify-end lg:justify-start items-center ml-8 sm:ml-16 uppercase text-sm text-white font-medium">
           <li className="">
-            <Link href="#" className="flex items-center">
+            <Link href="/" className="flex items-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -58,10 +58,10 @@ export default function Header({ children }) {
                   d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                 />
               </svg>
-
+{/* 
               <span className="fvn-badge-circle bg-orange-400 text-white">
                 99+
-              </span>
+              </span> */}
             </Link>
           </li>
         </ul>

@@ -24,10 +24,10 @@ export default function Home() {
         <DownloadYoutube />
 
         <div className="flex flex-col justify-center items-center mt-10">
-          <h2 className="text-2xl">
+          <h2 className="text-2xl px-4">
             YouTube Video Downloader Free Online at MediaSocial
           </h2>
-          <div className="my-2 px-20 italic">
+          <div className="my-2 px-4 md:px-20 italic">
             Are you tired of struggling to download and convert your favorite
             YouTube videos to various formats? Do you want a fast, reliable, and
             user-friendly solution to enjoy your beloved content offline? Look
